@@ -47,7 +47,7 @@ python autograde_grep.py
 
 This take-home assignment combines components from previous labs and introduces new concepts:
 
-### 1. Disk Simulator (Disk_Simulator/disk.py)
+### 1. Disk Simulator (Disk_Simulator/disk.py) - 2 marks
 
 #### Question 1: C-LOOK Algorithm
 
@@ -99,7 +99,7 @@ The requests should be processed in the order: `[5,8,17,3,57,52]`
 
 Make sure the code works with the various options available.
 
-### 2. LS Command Implementation (C)
+### 2. LS Command Implementation - 2 marks
 
 Implement a simplified version of the [`ls`](https://man7.org/linux/man-pages/man1/ls.1.html) command in C.
 
@@ -173,7 +173,7 @@ hardlink2_relative_file_path_to_file4 hardlink2_relative_file_path_to_file5 FILE
 
 **Warning:** Ensure that rows of `StringMatrix` returned by `ls_run()` are arranged in lexicographical order
 
-### 3. Grep Boilerplate (C) - 2 marks
+### 3. Grep Implementation - 2 marks
 
 Implement the file search functionality for a `grep` command.
 
@@ -271,4 +271,3 @@ python autograde_grep.py
 2. Proper memory management is critical - free all allocated memory
 3. Handle edge cases (NULL pointers, empty directories, etc.)
 4. Maintain lexicographical sorting where specified
-5. For hard links, use `stat()` to get inode numbers to identify hardlinked files
