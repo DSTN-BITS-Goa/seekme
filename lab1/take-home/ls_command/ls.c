@@ -5,6 +5,7 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <stdlib.h>
 
 Ls* ls_create(void) {
     Ls* ls = (Ls*)malloc(sizeof(Ls));
@@ -104,6 +105,7 @@ static char* strdup_safe(const char* str) {
 }
 
 LsEntry* ls_scan_directory(Ls* ls, const char* path, size_t* count) {
+    // TODO: Implement ls_scan_directory
     if (count == NULL) {
         return NULL;
     }
@@ -113,6 +115,7 @@ LsEntry* ls_scan_directory(Ls* ls, const char* path, size_t* count) {
 }
 
 StringMatrix* ls_process_entries(Ls* ls, LsEntry* entries, size_t* count) {
+    // TODO: Implement ls_process_entries
     StringMatrix* matrix = (StringMatrix*)malloc(sizeof(StringMatrix));
     if (matrix == NULL) {
         return NULL;
@@ -126,6 +129,7 @@ StringMatrix* ls_process_entries(Ls* ls, LsEntry* entries, size_t* count) {
 }
 
 StringMatrix* ls_run(Ls* ls, const char* path) {
+    // TODO: Implement ls_run
     if (ls == NULL || path == NULL) {
         return NULL;
     }
