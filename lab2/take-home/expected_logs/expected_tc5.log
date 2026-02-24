@@ -53,3 +53,11 @@ DATA_BLOCK_BITMAP: [1, 1, 1, 0, 0]
 inode0: Add New Info
 inode1: 
 inode2: 
+DELETE /file1.txt
+PATH_TO_INODE_MAP:
+/file2.txt: 1
+INODE_BITMAP: [0, 1, 0]
+DATA_BLOCK_BITMAP: [0, 0, 0, 0, 0]
+inode0: 
+inode1: 
+inode2: 
